@@ -1,7 +1,7 @@
-import "./App.css";
+import Form from "./ui/Form";
 
 function App() {
-  return <div className="App"></div>;
+  return <Form />;
 }
 
 export default App;

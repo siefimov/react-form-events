@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .input-styles {
+    @apply w-full border-b-2 border-[#aed2c4] pb-1 placeholder:text-[#aed2c4] bg-[#f2fcf8] outline-none text-green-700;
+  }
+  .btn-styles {
+    @apply inline-flex items-center justify-center w-full px-12 py-3 text-base font-bold leading-6 text-white bg-[#f96d54] border border-transparent rounded-full md:w-auto hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-600;
+  }
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -9,8 +17,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,7 +26,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+/* 
 a {
   font-weight: 500;
   color: #646cff;
@@ -43,7 +51,7 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid lightslategrey;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -71,4 +79,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
