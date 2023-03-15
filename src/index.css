@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .input-styles {
+    @apply w-full border-b-2 border-[#aed2c4] pb-1 placeholder:text-[#aed2c4] bg-[#f2fcf8] outline-none text-green-700;
+  }
+  .btn-styles {
+    @apply inline-flex items-center justify-center w-full px-12 py-3 text-base font-bold leading-6 text-white bg-[#f96d54] border border-transparent rounded-full md:w-auto hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-600;
+  }
+}
+
+*:disabled {
+  background-color: lightpink;
+}
+*:disabled:hover {
+  background-color: lightpink;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -41,7 +56,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -59,7 +74,7 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+*/
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -68,7 +83,7 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
+  /* button {
     background-color: #f9f9f9;
-  }
+  } */
 }

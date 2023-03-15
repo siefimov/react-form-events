@@ -1,7 +1,8 @@
 import "./App.css";
+import SignupForm from "./formik/Formik";
 
 function App() {
-  return <div className="App"></div>;
+  return <SignupForm />;
 }
 
 export default App;
