@@ -1,10 +1,10 @@
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import "yup-phone";
+// import "yup-phone-lite";
 
 const SignupForm = () => {
-  // Pass the useFormik() hook initial form values and a submit function that will
-  // be called when the form is submitted
   const formik = useFormik({
     initialValues: {
       fullName: "",
@@ -16,7 +16,7 @@ const SignupForm = () => {
     validationSchema: Yup.object({
       fullName: Yup.string().min(4, "Must be 4 characters or more").required("Required"),
       email: Yup.string().email("Invalid email address").required("Required"),
-      phone: Yup.string().min(10, "Must be 10 characters or more").required("Required"),
+      phone: Yup.string().min(7, "Please enter a valid phone number").required("Required"),
       message: Yup.string().min(10, "Must be 10 characters or more").required("Required"),
       checkbox: Yup.bool().oneOf([true]),
     }),
