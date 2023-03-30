@@ -1,7 +1,13 @@
-import "./App.css";
+import Form from "./ui/Form";
+import SignupForm from "./formik/Formik";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <>
+      <Form />
+      <SignupForm />
+    </>
+  );
 }
 
 export default App;
